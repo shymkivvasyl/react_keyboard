@@ -20,11 +20,13 @@ export class App extends React.Component {
   render(): React.ReactNode {
     const { pressedKey: pressedKey } = this.state;
 
-    return pressedKey ? (
+    return pressedKey
+      ? (
       <div className="App">
         <p className="App__message">The last pressed key is [{pressedKey}]</p>
       </div>
-    ) : (
+      )
+      : (
       <div className="App">
         <p className="App__message">Nothing was pressed yet</p>
       </div>
